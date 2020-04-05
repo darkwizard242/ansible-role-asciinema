@@ -1,0 +1,9 @@
+---
+# tasks file for docker - CentOS
+
+
+- name: Installing {{ asciinema_app }} on EL systems.
+  yum:
+    name: "{{ asciinema_app }}"
+    state: "{{ asciinema_app_desired_state }}"
+    update_cache: yes
