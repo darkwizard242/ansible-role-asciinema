@@ -1,0 +1,9 @@
+---
+# tasks file for asciinema - Debian
+
+- name: Installing {{ asciinema_app }} on Debian systems
+  apt:
+    name: "{{ asciinema_app }}"
+    state: "{{ asciinema_app_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
