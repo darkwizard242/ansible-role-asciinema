@@ -4,7 +4,7 @@ about: Suggest an idea for this project
 ---
 
 <!--- Verify first that your feature was not already discussed on GitHub -->
-<!--- Complete *all* sections as described, this form is processed automatically -->
+<!--- Complete *all* sections as described to the best of your knowledge -->
 
 ##### SUMMARY
 <!--- Describe the new feature/improvement briefly below -->
