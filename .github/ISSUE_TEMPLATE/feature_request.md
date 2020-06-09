@@ -1,7 +1,8 @@
---
+---
 name: ✨ Feature request
 about: Suggest an idea for this project
 ---
+
 <!--- Verify first that your feature was not already discussed on GitHub -->
 <!--- Complete *all* sections as described, this form is processed automatically -->
 
