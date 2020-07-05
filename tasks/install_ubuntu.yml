@@ -1,7 +1,7 @@
 ---
-# tasks file for asciinema - Ubuntu
+# tasks file for asciinema - Ubuntu OS
 
-- name: Adding repository {{ asciinema_ubuntu_repo }} on Ubuntu systems
+- name: Ubuntu OS | Adding repository {{ asciinema_ubuntu_repo }}
   apt_repository:
     repo: "{{ asciinema_ubuntu_repo }}"
     state: "{{ asciinema_ubuntu_repo_desired_state }}"
@@ -9,7 +9,7 @@
     codename: "{{ ansible_lsb['codename'] }}"
     update_cache: yes
 
-- name: Installing {{ asciinema_app }} on Ubuntu systems
+- name: Ubuntu OS | Installing {{ asciinema_app }}
   apt:
     name: "{{ asciinema_app }}"
     state: "{{ asciinema_app_desired_state }}"

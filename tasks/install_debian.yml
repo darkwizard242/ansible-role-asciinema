@@ -1,7 +1,7 @@
 ---
-# tasks file for asciinema - Debian
+# tasks file for asciinema - Debian OS
 
-- name: Installing {{ asciinema_app }} on Debian systems
+- name: Debian OS | Installing {{ asciinema_app }}
   apt:
     name: "{{ asciinema_app }}"
     state: "{{ asciinema_app_desired_state }}"

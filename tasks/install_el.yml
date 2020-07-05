@@ -1,8 +1,7 @@
 ---
-# tasks file for docker - CentOS
+# tasks file for docker - EL Family
 
-
-- name: Installing {{ asciinema_app }} on EL systems.
+- name: EL Family | Installing {{ asciinema_app }}
   yum:
     name: "{{ asciinema_app }}"
     state: "{{ asciinema_app_desired_state }}"
