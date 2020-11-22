@@ -8,6 +8,9 @@ on:
     branches:
       - 'feature_*'
       - 'master'
+  schedule:
+    - cron: '0 10 * * *'
+
 
 jobs:
 
