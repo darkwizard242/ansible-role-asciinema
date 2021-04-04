@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: asciinema
-  author: Ali Muhammad
+  author: darkwizard242
   description: Installs/uninstalls 'asciinema' package for recording and sharing terminal sessions.
   company: none
   license: MIT
