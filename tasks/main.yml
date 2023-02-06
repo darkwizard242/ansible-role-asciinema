@@ -11,4 +11,4 @@
 
 - name: Import install_el.yml if OS distribution is CentOS
   ansible.builtin.import_tasks: install_el.yml
-  when: ansible_distribution == "CentOS"
+  when: ansible_os_family == "RedHat"
