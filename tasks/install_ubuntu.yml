@@ -2,7 +2,7 @@
 # tasks file for asciinema - Ubuntu OS
 
 - name: Ubuntu OS | Adding repository {{ asciinema_ubuntu_repo }}
-  apt_repository:
+  ansible.builtin.apt_repository:
     repo: "{{ asciinema_ubuntu_repo }}"
     state: "{{ asciinema_ubuntu_repo_desired_state }}"
     filename: "{{ asciinema_ubuntu_repo_filename }}"
@@ -10,7 +10,7 @@
     update_cache: yes
 
 - name: Ubuntu OS | Installing {{ asciinema_app }}
-  apt:
+  ansible.builtin.apt:
     name: "{{ asciinema_app }}"
     state: "{{ asciinema_app_desired_state }}"
     force_apt_get: yes

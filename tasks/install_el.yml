@@ -2,7 +2,7 @@
 # tasks file for docker - EL Family
 
 - name: EL Family | Installing {{ asciinema_app }}
-  yum:
+  ansible.builtin.yum:
     name: "{{ asciinema_app }}"
     state: "{{ asciinema_app_desired_state }}"
     update_cache: yes
