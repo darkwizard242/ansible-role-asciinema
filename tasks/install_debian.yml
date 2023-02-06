@@ -2,7 +2,7 @@
 # tasks file for asciinema - Debian OS
 
 - name: Debian OS | Installing {{ asciinema_app }}
-  apt:
+  ansible.builtin.apt:
     name: "{{ asciinema_app }}"
     state: "{{ asciinema_app_desired_state }}"
     force_apt_get: yes

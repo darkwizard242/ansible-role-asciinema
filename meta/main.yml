@@ -10,6 +10,8 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
+        - jammy
+        - focal
         - bionic
     - name: Debian
       versions:
@@ -17,6 +19,7 @@ galaxy_info:
         - buster
     - name: EL
       versions:
+        - 8
         - 7
 
   galaxy_tags:
