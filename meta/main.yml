@@ -15,7 +15,6 @@ galaxy_info:
         - bionic
     - name: Debian
       versions:
-        - stretch
         - buster
     - name: EL
       versions:
