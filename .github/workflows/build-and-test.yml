@@ -49,7 +49,7 @@ jobs:
     name: Build & Test
     runs-on: ubuntu-22.04
     strategy:
-      max-parallel: 10
+      max-parallel: 12
       matrix:
         IMAGE: [ubuntu-24.04, ubuntu-22.04, ubuntu-20.04, ubuntu-18.04, rockylinux-8, centos-7, debian-bullseye, debian-buster]
 
