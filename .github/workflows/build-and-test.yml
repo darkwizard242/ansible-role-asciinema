@@ -28,7 +28,7 @@ jobs:
     steps:
 
     - name: Checkout source code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         path: '${{ env.CUSTOM_DIR }}'
         fetch-depth: 0
@@ -49,14 +49,14 @@ jobs:
     name: Build & Test
     runs-on: ubuntu-22.04
     strategy:
-      max-parallel: 10
+      max-parallel: 12
       matrix:
-        IMAGE: [ubuntu-22.04, ubuntu-20.04, ubuntu-18.04, rockylinux-8, centos-7, debian-bullseye, debian-buster]
+        IMAGE: [ubuntu-24.04, ubuntu-22.04, ubuntu-20.04, ubuntu-18.04, rockylinux-8, centos-7, debian-bullseye, debian-buster]
 
     steps:
 
     - name: Checkout source code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         path: '${{ env.CUSTOM_DIR }}'
 
