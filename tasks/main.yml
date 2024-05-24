@@ -2,7 +2,7 @@
 # tasks file for asciinema
 
 - name: Import install_debian.yml if OS Family is Debian
-  ansible.builtin.import_tasks: install_ubuntu.yml
+  ansible.builtin.import_tasks: install_debian.yml
   when: ansible_os_family == "Debian"
 
 - name: Import install_el.yml if OS Family is EL
