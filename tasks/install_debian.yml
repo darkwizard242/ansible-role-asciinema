@@ -1,7 +1,7 @@
 ---
-# tasks file for asciinema - Debian OS
+# tasks file for asciinema - Debian Family
 
-- name: Debian OS | Installing {{ asciinema_app }}
+- name: Debian Family | Installing {{ asciinema_app }}
   ansible.builtin.apt:
     name: "{{ asciinema_app }}"
     state: "{{ asciinema_app_desired_state }}"

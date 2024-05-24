@@ -1,14 +1,10 @@
 ---
 # tasks file for asciinema
 
-- name: Import install_debian.yml if OS distribution is Debian
+- name: Import install_debian.yml if OS Family is Debian
   ansible.builtin.import_tasks: install_debian.yml
-  when: ansible_distribution == "Debian"
+  when: ansible_os_family == "Debian"
 
-- name: Import install_ubuntu.yml if OS distribution is Ubuntu
-  ansible.builtin.import_tasks: install_ubuntu.yml
-  when: ansible_distribution == "Ubuntu"
-
-- name: Import install_el.yml if OS distribution is CentOS
+- name: Import install_el.yml if OS Family is EL
   ansible.builtin.import_tasks: install_el.yml
   when: ansible_os_family == "RedHat"
