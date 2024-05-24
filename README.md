@@ -2,7 +2,7 @@
 
 # Ansible Role: asciinema
 
-Role to install (_by default_) [asciinema](https://asciinema.org) or uninstall (_if passed as var_) on **Debian**, **EL** and **Ubuntu** systems.
+Role to install (_by default_) [asciinema](https://asciinema.org) or uninstall (_if passed as var_) on **Debian** family and **EL** family systems
 
 ## Requirements
 
@@ -17,20 +17,14 @@ Available variables are listed below (located in `defaults/main.yml`):
 ```yaml
 asciinema_app: asciinema
 asciinema_app_desired_state: present
-asciinema_ubuntu_repo: 'ppa:zanchey/asciinema'
-asciinema_ubuntu_repo_desired_state: present
-asciinema_ubuntu_repo_filename: asciinema
 ```
 
 ### Variables table:
 
-Variable                            | Description
------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-asciinema_app                       | Defines the app to install i.e. **asciinema**
-asciinema_package_desired_state     | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default is set to `present`.
-asciinema_ubuntu_repo               | Refers to the ppa repo to add. _Applies only to Ubuntu systems, not required for any other system._
-asciinema_ubuntu_repo_desired_state | Defined to dynamically chose whether to add/keep (i.e. `present`) or remove (i.e. `absent`) the repository file list from `/etc/apt/sources.list.d`. _Applies only to Ubuntu systems, not required for any other system._
-asciinema_ubuntu_repo_filename      | Defined to set the repository file name for saving in `/etc/apt/sources.list.d`. _Applies only to Ubuntu systems, not required for any other system._
+Variable                        | Description
+------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------
+asciinema_app                   | Defines the app to install i.e. **asciinema**
+asciinema_package_desired_state | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default is set to `present`.
 
 ## Dependencies
 

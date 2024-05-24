@@ -3,6 +3,3 @@
 
 asciinema_app: asciinema
 asciinema_app_desired_state: present
-asciinema_ubuntu_repo: 'ppa:zanchey/asciinema'
-asciinema_ubuntu_repo_desired_state: present
-asciinema_ubuntu_repo_filename: asciinema
